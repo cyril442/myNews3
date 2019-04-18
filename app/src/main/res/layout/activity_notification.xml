@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NotificationActivity"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_notification_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/title_notifications"
+            app:titleTextColor="#FFFFFF">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frame_layout_notifications_all_fragments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+    >
+
+        <fragment
+                android:id="@+id/query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                class="com.example.mynews.Fragments_Search.QueryFragment"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/check"
+                android:layout_marginTop="10dp"
+                />
+
+        <fragment
+                android:id="@+id/check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/query"
+                class="com.example.mynews.Fragments_Search.CheckBoxFragment"
+                android:layout_marginTop="10dp"
+        />
+
+
+
+        <fragment
+                android:id="@+id/switchScheduler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/check"
+                android:layout_marginTop="10dp"
+                class="com.example.mynews.Fragments_Notification.JobSchedulerFragment"
+                />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

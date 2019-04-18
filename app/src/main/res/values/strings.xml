@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My News</string>
+    <string name="search_articles_title">Search Articles</string>
+    <string name="notifications_toolbar">Notifications</string>
+    <string name="help_toolbar">help</string>
+    <string name="about_toolbar">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_to_test">il etait un petit homme, pirouette cacahuette, il etait un petit homme, qui avait une
+        drole de maison, qui avait uen drole de maison. Sa maison est en carton, pirouette cacaheutte
+    </string>
+    <string name="webview_title">Your Article</string>
+    <string name="search_query_term">Search Query term</string>
+    <string name="checkbox_arts">Arts</string>
+    <string name="checkbox_business">Business</string>
+    <string name="checkbox_entrepreneurs">Entrepreneurs</string>
+    <string name="checkbox_politics">Politics</string>
+    <string name="checkbox_travel">Travel</string>
+    <string name="checkbox_sports">Sports</string>
+    <string name="datepicker_text_begin_date">Begin Date</string>
+    <string name="datepicker_text_end_date">End Date</string>
+    <string name="search_button_search_activity">Search</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="text_scheduler">Enable notifications (once per day)</string>
+    <string name="search_result_activity_toolbar_title">Search Results</string>
+</resources>
